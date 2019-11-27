@@ -84,25 +84,18 @@
 
 <body>
     <a href="./index.html">HOME</a>
-    <form action="/sign_up" style="border:1px solid #ccc" method="POST">
+    <form action="/log_in" style="border:1px solid #ccc" method="GET">
         <div class="container">
-            <h1>SIGN up</h1>
-            <p>Please fill in this form to signup.</p>
+            <h1>LOGIN</h1>
+            <p>Please fill in this form to login.</p>
             <hr>
 
-            <br>
-            <input type="text" placeholder="Enter name" name="name" required>
-            <br>
-
+            <label for="email"><b>Email</b></label>
             <br>
             <input type="email" placeholder="Enter Email" name="email" required>
             <br>
-
+            <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required>
-
-
-            <br>
-            <input type="text" placeholder="phone number" name="phone" required>
 
 
 
@@ -110,11 +103,10 @@
       <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
     </label>
             <br>
-
-            <a href="./login1.html">already have an account</a>
+            <a href="./signup.html">create account</a>
             <div class="clearfix">
                 <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" class="signupbtn">login</button>
             </div>
         </div>
     </form>

@@ -19,10 +19,13 @@ app.get('/', function(req, res) {
     });*/
     return res.redirect('/public/index.html');
 }).listen(3000);
-console.log("Server listening at : 3000");
+console.log("Server listening att : 3000");
 
 var register = require('./controll/register')
 app.post('/sign_up', register)
 
 var login = require('./controll/login')
 app.get('/log_in', login)
+
+var timetable = require('./modal/timetable')
+app.post('/time', timetable)
